@@ -2,7 +2,7 @@
 
 Anonimized repository for the FlowScanner ASPLOS 2026 submission.
 
-FlowScanner is a Kernel module which allows for the tracing at the basic-block level of user application.
+FlowScanner is a Kernel module which allows the tracing of user application at the basic-block level.
 
 
 https://github.com/user-attachments/assets/1a948f0b-4d28-44bd-bb82-72ef17bf9ec2
