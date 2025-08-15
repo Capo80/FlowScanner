@@ -1,6 +1,12 @@
 # FlowScanner
 
-Anonimized repository for the FlowScanner ASPLOS 2026 submission
+Anonimized repository for the FlowScanner ASPLOS 2026 submission.
+
+FlowScanner is a Kernel module which allows for the tracing at the basic-block level of user application.
+
+
+https://github.com/user-attachments/assets/1a948f0b-4d28-44bd-bb82-72ef17bf9ec2
+
 
 ## Using FlowScanner
 
