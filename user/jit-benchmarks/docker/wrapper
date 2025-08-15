@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+t0 = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+pid = Process.spawn(*ARGV.to_a)
+STDERR.puts("started\t#{pid}")
+res = Process.waitall
+t1 = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+STDERR.puts("time(#{t1 - t0})")
+
+exitstatus = res[0][1].exitstatus
+exit exitstatus
