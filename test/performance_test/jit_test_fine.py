@@ -95,11 +95,11 @@ class Language:
             return run_time_command(self.run_cmd.format(file, N), executions)
 
 TESTED_LANGUAGES = [
-    # Language("C", ".c", "./{} {}", False, True, "gcc {} -o a.out -lm", "a.out"),
+    Language("C", ".c", "./{} {}", False, True, "gcc {} -o a.out -lm", "a.out"),
     #https://stitcher.io/blog/php-8-jit-setup
-    # Language("PHP", ".php", "/usr/bin/php -dopcache.enable_cli=1 -dopcache.enable=1 -dopcache.jit_buffer_size=100M -dopcache.jit=1255 {} {}", True, False),
+    Language("PHP", ".php", "/usr/bin/php -dopcache.enable_cli=1 -dopcache.enable=1 -dopcache.jit_buffer_size=100M -dopcache.jit=1255 {} {}", True, False),
     Language("PYTHON", ".py", "/tmp/python3 {} {}", True, False),
-    # Language("LuaJit", ".lua", "/usr/bin/luajit {} {}", True, False),
+    Language("LuaJit", ".lua", "/usr/bin/luajit {} {}", True, False),
     # Language("Ruby", ".rb", "ruby --jit {} {}", True, False) # No WX pages????
 ]
 

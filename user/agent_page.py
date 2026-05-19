@@ -50,9 +50,9 @@ def yara_check():
                 time.sleep(1)
                 continue
 
-            print("Contents: ")
-            hexdump(buff[:4096])
-            print("PID: {}, Address: {:x}".format(pid, address))
+            # print("Contents: ")
+            # hexdump(buff[:4096])
+            # print("PID: {}, Address: {:x}".format(pid, address))
             try:
                 # pass
                 #if ("inject" in open("/proc/" + str(pid) + "/cmdline").read()):

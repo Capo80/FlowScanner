@@ -9,7 +9,7 @@
 #define DCE_DEBUG if (0) // Debugging of the dinamic check engine
 #define AUDIT if (0) // For debugging purposes switch to 1 to print audit messages
 #define DRIVER_PRINT if (0)
-#define DELETE_ME if (1)
+#define DELETE_ME if (0)
 
 #define LOCK if (1) // To enable locking mechanism
 

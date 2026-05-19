@@ -23,6 +23,16 @@ gcc test/other_test/vuln.c && a.out
 ```
 By default it will only trace programs named ```a.out``` and the Spec CPU binaries. If you want to trace something else you can change the names in the mod.c file and then recompile.
 
+## Test data
+
+Additional test data can be found [here](https://drive.proton.me/urls/H6SKCA5DJ4#7fjNFz5NSjRW).
+
+In particular the folder contains 3 archives:
+- "traces.zip", contains the complete trace of every intel64 malware found on virusshare and every elf in the "/usr/bin" directory, meaning it's the collection of every byte of every page or basic block collected with JITScanner and FlowScanner respectively.
+- "signatures.zip", contains the signatures generated from the traces;
+- "detection_test_results.zip" contains the detection results obtained using the signatures;
+
+
 ## Folder Structure
 
 The folders are stuctured as follows:

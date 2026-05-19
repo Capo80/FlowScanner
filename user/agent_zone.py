@@ -124,23 +124,23 @@ def zone_yara_check ():
             stats_dict = struct_to_dict(uz.stats)
             timestamp = timespec64_to_ns(uz.ts)
 
-            hexdump(buff[:end_addr-start_addr])
-            print("PID: {}, TID: {}, Start Address: {:x}, End Address: {:x}, size : {}".format(pid, tid, start_addr, end_addr, end_addr - start_addr))
+            # hexdump(buff[:end_addr-start_addr])
+            # print("PID: {}, TID: {}, Start Address: {:x}, End Address: {:x}, size : {}".format(pid, tid, start_addr, end_addr, end_addr - start_addr))
             # print("PID: {}, TID: {}, Start Address: {:x}, End Address: {:x}, Timestamp: {}, Stats: {}".format(pid, tid, start_addr, end_addr, timestamp, stats_dict))
 #            time.sleep(0.1)
             zone_sizes.append(end_addr - start_addr)
  
             try:
-                # pass
+                pass
                 #if ("inject" in open("/proc/" + str(pid) + "/cmdline").read()):
                 #print("DATA: ", bytes(buff[:end_addr - start_addr + 1]))
                 #matches = rules.match(data=bytes(buff[:end_addr - start_addr]))
-                if matches or True:
-                    print("------------------")
-                    print("matches: ", matches)
-                    print("address", hex(page_addr))
-                    print("buff: ", hexlify(buff[:end_addr - start_addr]))
-                    print("pid", pid)
+                # if matches or True:
+                #     print("------------------")
+                #     print("matches: ", matches)
+                #     print("address", hex(page_addr))
+                #     print("buff: ", hexlify(buff[:end_addr - start_addr]))
+                #     print("pid", pid)
             except Exception:
                 pass
 
