@@ -1,7 +1,5 @@
 # FlowScanner
 
-Anonimized repository for the FlowScanner DIMVA 2026 submission.
-
 FlowScanner is a Kernel module which allows the tracing of user application at the basic-block level.
 
 
