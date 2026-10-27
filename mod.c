@@ -34,24 +34,7 @@ char* interpreters[TOTAL_INTERPRETERS] = {
 
 #ifndef HOOKED_PROCESS_NAME
 char *hooked_list[TOTAL_HOOKED] = {
-	"objdump",
-	"cat",
-	"perlbench_s", 
-	"gcc_s", 
-	"mcf_s", 
-	"omnetpp_s", 
-	"xalancbmk_s", 
-	"x264_s", 
-	"deepsjeng_s", 
-	"leela_s", 
-	"exchange2_s", 
-	"xz_s",
 	"a.out",
-	"objdump",
-	"php",
-	"/tmp/python3",
-	"luajit",
-	/* "ruby", */
 };
 DEFINE_HASHTABLE(hooked_pids, 8);
 #endif

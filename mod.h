@@ -51,7 +51,7 @@ extern char* interpreters[TOTAL_INTERPRETERS];
 #define MODULE_NAME "FlowScanner"
 
 #ifndef HOOKED_PROCESS_NAME
-#define TOTAL_HOOKED 17
+#define TOTAL_HOOKED 1
 extern char *hooked_list[TOTAL_HOOKED];
 struct hooked_pid_node
 {
